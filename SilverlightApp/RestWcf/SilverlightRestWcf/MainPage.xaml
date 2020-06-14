@@ -1,0 +1,18 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="SilverlightRestWcf.MainPage"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Button x:Name="btnGoRestWcf" Content="RestWcfPage" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="95" Click="btnGoRestWcf_Click"/>
+        <HyperlinkButton Content="HyperlinkButton" HorizontalAlignment="Left" Margin="150,10,0,0" VerticalAlignment="Top" Background="#FFBFBFD3" Height="19" Width="108" Click="HyperlinkButton_Click" NavigateUri="/RestWcfPage.xaml" TargetName="frame"/>
+
+        <sdk:Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="243" Margin="10,47,0,0" VerticalAlignment="Top" Width="380"/>
+        <Button x:Name="btnGoPage" Content="Page1" HorizontalAlignment="Left" Margin="315,10,0,0" VerticalAlignment="Top" Width="75" Click="btnGoPage_Click"/>
+
+    </Grid>
+</UserControl>
